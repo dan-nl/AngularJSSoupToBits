@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>AngularJS Reading List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="container">
+
+	<h1>Angular Reading List of Awesome</h1>
+
+	<!-- review form -->
+	<div class="row">
+		<button class="btn btn-default">Create a Review</button>
+		<hr />
+		<form name="reviewForm" class="form-horizontal">
+
+			<!-- live preview -->
+			<section class="row well live-preview">
+				<aside class="col-sm-3">
+					<a href="http://www.amazon.com/gp/product/book.isbn">
+						<img src="http://images.amazon.com/images/P/book.isbn.01.ZTZZZZZZ.jpg" alt="Cover of book.title" class="full">
+					</a>
+					<p>0/5</p>
+				</aside>
+
+				<div class="col-sm-9">
+					<h3>
+						<a href="http://www.amazon.com/gp/product/book.isbn">
+							Title of Book
+						</a>
+					</h3>
+					<cite class="text-muted">Written by Author's Name</cite>
+					<p>No review yet.</p>
+					<ul class="list-unstyled">
+						<li>
+							<span class="label label-primary">genre</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- review input fields -->
+			<div class="input-container">
+				<fieldset class="form-group">
+					<label for="title" class="col-sm-2 control-label">Title:</label>
+					<span class="col-sm-9">
+						<input type="text" name="title" class="form-control" id="title" placeholder="Book Title">
+					</span>
+				</fieldset>
+
+				<fieldset class="form-group">
+				<label for="isbn" class="control-label col-sm-2">ISBN:</label>
+				<span class="col-sm-9">
+					<input type="text" name="isbn" id="isbn" class="form-control" maxLength="10" placeholder="ISBN-10">
+				</span>
+				</fieldset>
+
+				<fieldset class="form-group">
+				<label class="control-label col-sm-2" for="author">Author</label>
+				<span class="col-sm-9">
+					<input type="text" name="author" id="author" class="form-control" placeholder="Name of the Author"></span>
+				</fieldset>
+
+				<fieldset class="form-group">
+					<label class="control-label col-sm-2" for="review">Review</label>
+					<span class="col-sm-9">
+						<textarea name="review" id="review" class="form-control" cols="30" rows="3" placeholder="Book Review"></textarea>
+					</span>
+				</fieldset>
+
+				<fieldset class="form-group">
+					<label for="rating" class="control-label col-sm-2">Rating:</label>
+					<span class="col-sm-9">
+						<select name="rating" id="rating" value="5" class="form-control">
+							<option value="">Rate the book</option>
+							<option>5</option>
+							<option>4</option>
+							<option>3</option>
+							<option>2</option>
+							<option>1</option>
+						</select>
+					</span>
+				</fieldset>
+
+				<fieldset class="form-group">
+					<label class="control-label col-sm-2" >Genre:</label>
+					<div class="genre">
+						<label for="genre" class="genre-label form-control">
+							<input type="checkbox" name="genre" id="genre" />
+							genre
+						</label>
+					</div>
+				</fieldset>
+
+				<fieldset class="form-group">
+					<span class="col-sm-9 col-sm-offset-2 button-from-hell">
+						<button class="btn btn-primary">Save Review</button>
+					</span>
+				</fieldset>
+			</div>
+
+		</form>
+
+	</div>
+	<!-- end review form -->
+
+	<hr />
+
+	<!-- book list -->
+	<div class="row">
+		<ul class="list-unstyled col-sm-8">
+			<li class="book row">
+				<aside class="col-sm-3">
+					<a href="http://www.amazon.com/gp/product/0553593714"><img src="http://images.amazon.com/images/P/0553593714.01.ZTZZZZZZ.jpg" alt="Cover of A Game of Thrones: A Song of Ice and Fire" class="full"></a>
+					<p class="goodRating rating">4/5</p>
+				</aside>
+				<div class="col-sm-9">
+					<h3><a href="http://www.amazon.com/gp/product/0553593714">A Game of Thrones: A Song of Ice and Fire</a></h3>
+					<cite class="text-muted">Written by George R.R. Martin</cite>
+					<p>The most inventive and entertaining fantasy saga of our time—warrants one hell of an introduction. I loved this book!</p>
+					<ul class="list-unstyled">
+						<li>
+							<span class="label label-primary">non-fiction</span>
+						</li>
+						<li>
+							<span class="label label-primary">fantasy</span>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- end book list -->
+
+</body>
+</html>
