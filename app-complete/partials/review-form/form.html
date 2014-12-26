@@ -1,0 +1,8 @@
+<button class="btn btn-default" ng-click="reviewFormCtrl.showForm = !reviewFormCtrl.showForm">{{reviewFormCtrl.showForm ? "Cancel" : "Create a Review"}}</button>
+
+<hr />
+
+<form name="reviewForm" class="form-horizontal" role="form" ng-show="reviewFormCtrl.showForm" ng-submit="reviewFormCtrl.addReview( reviewForm )">
+  <live-preview></live-preview>
+  <review-fields></review-fields>
+</form>

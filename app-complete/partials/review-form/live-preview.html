@@ -1,0 +1,23 @@
+<section class="row well live-preview">
+	<aside class="col-sm-3">
+		<a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.book.isbn ? reviewFormCtrl.book.isbn : 0}}">
+			<img ng-src="http://images.amazon.com/images/P/{{reviewFormCtrl.book.isbn ? reviewFormCtrl.book.isbn : 0}}.01.ZTZZZZZZ.jpg" alt="Cover of {{reviewFormCtrl.book.title}}" class="full">
+		</a>
+		<p>{{reviewFormCtrl.book.rating ? reviewFormCtrl.book.rating : 0}}/5</p>
+	</aside>
+
+	<div class="col-sm-9">
+		<h3>
+			<a href="http://www.amazon.com/gp/product/{{reviewFormCtrl.book.isbn ? reviewFormCtrl.book.isbn : 0}}">
+				{{reviewFormCtrl.book.title ? reviewFormCtrl.book.title : "Title of Book"}}
+			</a>
+		</h3>
+		<cite class="text-muted">Written by {{reviewFormCtrl.book.author ? reviewFormCtrl.book.author :"Author’s Name"}}</cite>
+		<p>{{reviewFormCtrl.book.review ? reviewFormCtrl.book.review : "No review yet."}}</p>
+		<ul class="list-unstyled">
+			<li ng-repeat="(genre, state) in reviewFormCtrl.book.genres">
+				<span class="label label-primary" ng-show="state">{{genre}}</span>
+			</li>
+		</ul>
+	</div>
+</section>
