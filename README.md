@@ -1,5 +1,5 @@
 # AngularJS Soup to Bits
-provides a beginning point for the [Angular Soup to Bits Screencast][1] at Code School.
+Provides a vanilla and complete version of the application used in the [Angular Soup to Bits Screencast][1] at Code School.
 
 
 ## Objectives
